@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyPortfolio.Site.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Harshal's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Site.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header class="navbar">
+<div class="logo">
+    <span class="bracket">&lt;</span>Harshal<span class="dot">.dev</span><span class="bracket">/&gt;</span>
+</div>           <nav class="nav-links">
+                <a href="Default.aspx">Home</a>
+                <a href="About.aspx">About</a>
+                <a href="Projects.aspx">Projects</a>
+                <a href="Contact.aspx">Contact</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Harshal's Portfolio. All rights reserved.</p>
+        </footer>
+
+    </form>
+</body>
+</html>

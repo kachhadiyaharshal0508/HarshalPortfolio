@@ -1,0 +1,9 @@
+bin/
+obj/
+packages/
+*.dll
+*.pdb
+*.exe
+*.suo
+*.user
+node_modules/

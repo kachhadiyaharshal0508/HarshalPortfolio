@@ -1,0 +1,205 @@
+﻿/* ---------- Reset & Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ---------- Color Palette ----------
+   Dark navy   : #0f172a
+   Accent teal : #14b8a6
+   Light bg    : #f7f8fa
+   Text muted  : #64748b
+------------------------------------- */
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: #0f172a;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+    .logo span {
+        color: #14b8a6;
+    }
+
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+    .nav-links a {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: all 0.25s ease;
+    }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            background: #14b8a6;
+        }
+
+        /* Optional: highlight current page — add class="active" manually on the matching link */
+        .nav-links a.active {
+            color: #ffffff;
+            background: #14b8a6;
+        }
+
+/* ---------- Content area ---------- */
+.content {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* ---------- Reusable page elements ---------- */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+    .hero h1 {
+        font-size: 36px;
+        color: #0f172a;
+    }
+
+    .hero p {
+        color: #64748b;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #14b8a6;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.25s ease;
+}
+
+    .btn:hover {
+        background: #0d9488;
+    }
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    width: 280px;
+    padding: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .project-card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+
+    .project-card h3 {
+        color: #0f172a;
+        margin-bottom: 6px;
+    }
+
+    .project-card p {
+        color: #64748b;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .project-card a {
+        color: #14b8a6;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.logo {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #fff;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+}
+
+.bracket {
+    color: #2dd4bf;
+    font-weight: 800;
+}
+
+.dot {
+    background: linear-gradient(135deg, #2dd4bf, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
